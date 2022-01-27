@@ -1,0 +1,764 @@
+/* Eric Meyer's CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+html {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px Arial, sans-serif;
+    height: 100%;
+    background-color: rgb(255, 243, 197);
+}
+
+.wrapper {
+    width: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(255, 243, 197);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#navigator-desktop {
+    display: none;
+    visibility: hidden;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+    width: 100%;
+    height: 3.5em;
+    background: rgb(125, 29, 28);
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0px 0px 8px 2px #000000;
+    padding-top: 1.5em;
+    margin-bottom: 5em;
+}
+
+h1 {
+    padding-top: 0.4em;
+    font-size: 2em;
+    font-family: 'Parisienne', cursive;
+    color: white;
+    text-align: center;
+}
+
+.header img {
+    width: 100%;
+}
+
+.navigator-list {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(125, 29, 28);
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+}
+
+.navigator-list a {
+    width: 100%;
+    font-size: 2em;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#navigator ul li {
+    text-align: center;
+    padding: 1em;
+}
+
+#navigator ul li::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 15vw;
+    background: white;
+    position: relative;
+    right: 10px;
+    margin-bottom: 5px;
+}
+
+#navigator ul li::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 15vw;
+    background: white;
+    position: relative;
+    left: 10px;
+    margin-bottom: 5px;
+}
+
+.navigator-list a:hover {
+    text-decoration: underline;
+}
+
+#navigator:hover .navigator-list {
+    visibility: visible;
+}
+
+#languages {
+    padding-top: 0.2em;
+    padding-right: 1em;
+    text-align: right;
+    font-family: 'Questrial', sans-serif;
+}
+
+#languages ul li a {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-weight: 500;
+}
+
+#languages ul li a:hover {
+    text-decoration: underline;
+}
+
+#languages ul li {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    display: inline-block;
+}
+
+.navigator-list-desktop {
+    visibility: hidden;
+    display: none;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+    padding-top: 3em;
+}
+
+.part {
+    margin: 0.2em 0.4em;
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    font-size: 2em;
+    font-family: 'Vidaloka', serif;
+    color: rgb(187, 35, 43);
+    text-align: center;
+    margin: 0.5em;
+}
+
+h3 {
+    font-size: 3em;
+    font-family: 'Parisienne', cursive;
+    color: rgb(35, 92, 145);
+    text-align: center;
+    margin: 0.5em 0em;
+}
+
+p {
+    font-size: 1.35em;
+    font-family: 'Questrial', sans-serif;
+}
+
+#main-image picture {
+    max-width: 100%;
+}
+
+#opening-hours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+    background-color: white;
+    padding-bottom: 1.5em;
+}
+
+#days p {
+    text-align: left;
+}
+
+#days {
+    margin-right: 1em;
+}
+
+#hours p {
+    text-align: right;
+}
+
+#hours {
+    margin-left: 1em;
+}
+
+#statue {
+    visibility: hidden;
+    display: none;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#menu p {
+    text-align: center;
+}
+
+#menu h2 {
+    width: 100%;
+}
+
+#food {
+    width: 100%;
+}
+
+column p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+#contact {
+    background: white;
+    text-align: center;
+}
+
+#contact img {
+    padding: 0.3em;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#reservation {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#informations p {
+    padding: 1em 0;
+}
+
+#informations {
+    margin-right: 1em;
+}
+
+button {
+    background-color: rgb(125, 29, 28);
+    margin-bottom: 0.7em;
+}
+
+strong {
+    color: white;
+    font-size: 1.35em;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+    background: rgb(125, 29, 28);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+footer > small {
+    text-align: center;
+    color: white;
+}
+
+
+/* ------------ Tablet Mode -----------------*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: rgb(125, 29, 28);
+    }
+
+    .header {
+        position: fixed;
+        box-shadow: none;
+        padding-bottom: 7.5em;
+    }
+
+    .header img {
+        visibility: hidden;
+    }
+
+    #navigator {
+        margin-top: 2em;
+        text-align: center;
+        align-self: center;
+    }
+
+    .navigator-list {}
+
+    #navigator ul li::before {
+        content: none;
+    }
+
+    #navigator ul li::after {
+        content: none;
+    }
+
+    #navigator ul li {
+        padding: 1em;
+        display: inline-block;
+    }
+
+    #navigator ul li a {
+        color: black;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .navigator-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        background-color: white;
+        width: 80%;
+        padding: 0 0 0 0;
+        visibility: visible;
+        position: absolute;
+        z-index: 3;
+        text-align: center;
+        margin-left: 10vw;
+    }
+
+    .navigator-list li a {
+        padding: 0;
+    }
+
+    .navigator-list li::after {
+        content: ".";
+        height: 8px;
+        width: 1px;
+        color: rgb(125, 29, 28);
+        right: 1.5em;
+    }
+
+    .navigator-list li:last-child {
+        border-right: none;
+    }
+    #languages {
+        font-size: 2em;
+    }
+
+    #languages ul li a {
+        font-family: 'Questrial', sans-serif;
+        font-weight: 100;
+    }
+
+    .content {
+        padding-top: 3em;
+    }
+
+    #statue {
+        visibility: visible;
+        display: block;
+        width: 44%;
+        margin-bottom: 1.1em;
+    }
+
+    #opening-hours {
+        width: 53%;
+        margin-bottom: 1.5em;
+    }
+
+    #menu {
+        margin-bottom: 1.5em;
+    }
+
+    #food {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 1em;
+    }
+
+    #food p {
+        padding-bottom: 1em;
+    }
+
+    #column1 {
+        width: 48%;
+    }
+    #column2 {
+        width: 48%;
+    }
+
+    #second-image {
+        width: 48%;
+    }
+    #contact {
+        margin-bottom: 0.7em;
+        padding: 0;
+        width: 49%;
+    }
+    #contact img {
+        padding: 1em 1em 0 1em;
+        ;
+    }
+    #reservation {
+        order: 8;
+        width: 100%;
+        align-self: flex-end;
+        justify-content: space-around;
+    }
+    #map {
+        width: 48%;
+    }
+    
+    #bar {
+        order: 7;
+        width: 49%;
+        order: 2;
+    }
+
+    .tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 9em;
+        height: 5em;
+    }
+
+    button > strong {
+        font-weight: bold;
+    }
+}
+
+/*------- Desktop ------- */
+
+@media only screen and (min-width: 1366px) {
+    #navigator {
+        display: none;
+        visibility: hidden;
+    }
+
+    .navigator-list {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .header {
+        background: rgb(125, 29, 28);
+        height: 1em;
+        margin: 0;
+        padding-bottom: 1.9em;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    
+    #languages ul li a {
+        font-size: 0.8em;
+    }
+
+    .content {
+        align-items: stretch;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        order: 1;
+        text-align: left;
+        font-size: 2em;
+        padding: 0 0 0 2em;
+    }
+
+    #languages {
+        display: inline;
+        order: 3;
+    }
+
+    #bar {
+        visibility: hidden;
+        display: none;
+    }
+
+    p {
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+
+    #reservation {
+        order: 7;
+        width: 48%;
+    }
+
+    #map {
+        order: 8;
+        width: 49%;
+    }
+
+    #navigator-desktop {
+        z-index: 1;
+        text-align: center;
+        display: inline;
+        order: 2; 
+    }
+    
+    
+    #navigator-list-desktop {
+        text-decoration: none;
+    }
+
+    #navigator-list-desktop li {
+        display: inline;
+        visibility: visible;
+    }
+    
+    #navigator-list-desktop li a {
+        color: white;
+        text-decoration: none;
+        padding: 0 1em;
+        font-size: 1.4em;
+        font-family: 'Questrial', sans-serif;
+    }
+
+    #navigator-list-desktop li a:hover {
+        text-decoration: underline;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        background: rgb(125, 29, 28);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 60%;
+        border: 1px solid black;
+        padding: 2em;
+    }
+
+    #reservation {
+        width: 100%;
+    }
+
+
+    #map {
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
